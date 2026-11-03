@@ -1,4 +1,0 @@
-streamlit>=1.50,<2
-pandas>=2.0
-plotly>=5.18
-xlsxwriter>=3.1
