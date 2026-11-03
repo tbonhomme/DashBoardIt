@@ -1,0 +1,129 @@
+{
+  "dossier_depot": "depot",
+  "archiver_apres_import": true,
+  "dossier_archive": "depot/traites",
+  "dossier_erreurs": "depot/erreurs",
+  "base": "data/suivi_tickets.db",
+  "mode_journal": "DELETE",
+  "dossier_sauvegardes": "backups",
+  "nb_sauvegardes_conservees": 20,
+  "dossier_export": "exports",
+  "nom_export": "Suivi_Tickets.xlsx",
+  "export_auto_apres_import": false,
+  "dossier_logs": "logs",
+  "import_auto_au_demarrage": true,
+  "jira_base_url": "",
+  "jours_sans_maj_alerte": 14,
+  "ordre_priorite_jira": [
+    "Bloquant",
+    "Majeur",
+    "Mineur"
+  ],
+  "etats_clos": [
+    "Terminé",
+    "Fermé",
+    "Résolu",
+    "Closed",
+    "Done",
+    "Resolved"
+  ],
+  "mapping_jira": {},
+  "detection_application": {
+    "NAIA": [
+      "naia"
+    ],
+    "AX": [
+      "\\bax\\b",
+      "dynamics"
+    ],
+    "EDI": [
+      "\\bedi\\b"
+    ]
+  },
+  "colonnes_perso": [
+    {
+      "id": "priorite_perso",
+      "nom": "Priorité perso",
+      "type": "liste",
+      "valeurs": [
+        "1 - Urgent",
+        "2 - Haute",
+        "3 - Normale",
+        "4 - Basse"
+      ],
+      "actif": true
+    },
+    {
+      "id": "action_en_cours",
+      "nom": "Action en cours",
+      "type": "texte",
+      "actif": true
+    },
+    {
+      "id": "action_a_faire",
+      "nom": "Action à faire",
+      "type": "texte",
+      "actif": true
+    },
+    {
+      "id": "application",
+      "nom": "Application",
+      "type": "liste",
+      "valeurs": [
+        "AX",
+        "NAIA",
+        "EDI",
+        "Autre"
+      ],
+      "actif": true
+    },
+    {
+      "id": "rapporteur",
+      "nom": "Rapporteur",
+      "type": "texte",
+      "actif": true
+    },
+    {
+      "id": "lien_ticket",
+      "nom": "Lien ticket",
+      "type": "lien",
+      "actif": true
+    },
+    {
+      "id": "n_editeur",
+      "nom": "N° Editeur",
+      "type": "texte",
+      "actif": true
+    },
+    {
+      "id": "editeur",
+      "nom": "Editeur",
+      "type": "texte",
+      "actif": true
+    },
+    {
+      "id": "lien_editeur",
+      "nom": "Lien éditeur",
+      "type": "lien",
+      "actif": true
+    }
+  ],
+  "ordre_colonnes_tickets": [
+    "Application",
+    "Lien ticket",
+    "Priorité perso",
+    "Clé",
+    "Résumé",
+    "Action en cours",
+    "Action à faire",
+    "Type",
+    "État",
+    "Priorité Jira",
+    "Rapporteur",
+    "Échéance",
+    "Mise à jour",
+    "Tâches ouvertes",
+    "Temps passé",
+    "Présence"
+  ]
+}
